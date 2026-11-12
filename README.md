@@ -1,14 +1,42 @@
-Pasos para levantar cliente y servidor:
-1- Instalar Python (acá se usa versión 3.13.5)
-2- Instalar librería con "pip install pyftpdlib"
-3- Ejecutar estos dos comandos en las distintas terminales:
+# Cómo levantar el cliente y el servidor
 
-Terminal 1 (levanta servidor): python servidor_prueba.py
-Terminal 2 (levanta cliente): python ftp_client.py localhost 2121
+## Requisitos e instalación
 
-4- Ingresar usuario = alumno y password = utn123
-5- Ejecutar esta secuencia de comandos para ver que ande todo bien:
+1. Instalar Python. En este proyecto se utiliza la versión **3.13.5**.
+2. Instalar la librería necesaria ejecutando:
 
+   ```bash
+   pip install pyftpdlib
+   ```
+
+## Ejecución
+
+Ejecutar los siguientes comandos en dos terminales diferentes:
+
+**Terminal 1 – Levantar el servidor:**
+
+```bash
+python servidor_prueba.py
+```
+
+**Terminal 2 – Levantar el cliente:**
+
+```bash
+python ftp_client.py localhost 2121
+```
+
+## Credenciales de acceso
+
+Al iniciar el cliente, ingresar las siguientes credenciales:
+
+- **Usuario:** `alumno`
+- **Contraseña:** `utn123`
+
+## Pruebas de funcionamiento
+
+Una vez conectado, ejecutar la siguiente secuencia de comandos para verificar el correcto funcionamiento del cliente y el servidor:
+
+```bash
 pwd
 ls
 get hola.txt
@@ -19,4 +47,4 @@ rename carpeta carpeta2
 rmdir carpeta2
 delete ftp_client.py
 quit
-
+```
